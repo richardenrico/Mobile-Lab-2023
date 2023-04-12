@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Volume (Tuprak1)</string>
+    <string-array name="bangun">
+        <item>Pilih</item>
+        <item>Kerucut</item>
+        <item>Balok</item>
+        <item>Bola</item>
+    </string-array>
+</resources>

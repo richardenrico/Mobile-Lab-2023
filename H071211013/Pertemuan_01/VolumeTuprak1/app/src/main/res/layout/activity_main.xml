@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Bangun Ruang :"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/list"/>
+
+    <Spinner
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:entries="@array/bangun">
+    </Spinner>
+
+
+    <TextView
+        android:id="@+id/jari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jari-Jari"
+        android:paddingTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/isijari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/jari"
+        app:layout_constraintTop_toBottomOf="@+id/jari" />
+
+    <TextView
+        android:id="@+id/panjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Panjang"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/isijari" />
+
+    <EditText
+        android:id="@+id/isipanjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/jari"
+        app:layout_constraintTop_toBottomOf="@+id/panjang" />
+
+    <TextView
+        android:id="@+id/lebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lebar"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/isipanjang" />
+
+    <EditText
+        android:id="@+id/isilebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text=""
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/jari"
+        app:layout_constraintTop_toBottomOf="@+id/lebar" />
+
+    <TextView
+        android:id="@+id/tinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tinggi"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/isilebar"/>
+
+    <EditText
+        android:id="@+id/isitinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/jari"
+        app:layout_constraintTop_toBottomOf="@+id/tinggi" />
+
+    <Button
+        android:id="@+id/hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HITUNG"
+        app:layout_constraintTop_toBottomOf="@+id/isitinggi" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/hitung"
+        app:layout_constraintStart_toStartOf="@id/hitung"
+        app:layout_constraintEnd_toEndOf="@id/hitung" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
