@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">praktikum-03-02</string>
-    <string name="quiz_number">Quiz %d / 5</string>
-    <string name="best_score">Best Score : %d</string>
-    <string name="score">Score</string>
-    <string name="best_score_title">Best Score</string>
-    <string name="play_again">Play Again</string>
-</resources>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="quiz_number">Quiz %d / 3</string>
-    <string name="best_score">Best Score : %d</string>
-</resources>
