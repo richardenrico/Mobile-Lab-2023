@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.erwin.praktikum_02_kalkulator'
+    namespace 'com.h071211059.pertemuan02'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.erwin.praktikum_02_kalkulator"
+        applicationId "com.h071211059.pertemuan02"
         minSdk 24
         targetSdk 33
         versionCode 1
