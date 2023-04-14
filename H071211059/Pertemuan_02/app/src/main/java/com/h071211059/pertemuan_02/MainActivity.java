@@ -1,4 +1,4 @@
-package com.h071211059.pertemuan02;
+package com.h071211059.pertemuan_02;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,8 +7,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.erwin.praktikum_02_kalkulator.R;
 
 import java.text.DecimalFormat;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package com.h071211059.pertemuan0102;
+package com.h071211059.pertemuan_02;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.erwin.activityassignment2", appContext.getPackageName());
+        assertEquals("com.erwin.praktikum_02_kalkulator", appContext.getPackageName());
     }
 }

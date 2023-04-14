@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.h071211059.pertemuan0301'
+    namespace 'com.h071211059.pertemuan_03_01'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.h071211059.pertemuan0301"
+        applicationId "com.h071211059.pertemuan_03_01"
         minSdk 24
         targetSdk 33
         versionCode 1

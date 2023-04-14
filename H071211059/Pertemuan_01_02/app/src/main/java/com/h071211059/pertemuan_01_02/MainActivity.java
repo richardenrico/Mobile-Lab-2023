@@ -1,6 +1,5 @@
-package com.h071211059.pertemuan0102;
+package com.h071211059.pertemuan_01_02;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -8,7 +7,7 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.h071211059.pertemuan0102.databinding.ActivityMainBinding;
+import com.h071211059.pertemuan_01_02.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
 import java.util.List;

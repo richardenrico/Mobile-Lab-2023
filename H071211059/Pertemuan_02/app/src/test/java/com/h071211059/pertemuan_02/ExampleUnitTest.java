@@ -1,4 +1,4 @@
-package com.h071211059.pertemuan0301;
+package com.h071211059.pertemuan_02;
 
 import org.junit.Test;
 
