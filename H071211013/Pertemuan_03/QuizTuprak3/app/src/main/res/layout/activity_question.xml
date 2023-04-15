@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tw2"
+    tools:context=".Question">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/twice_logo"
+        android:layout_gravity="center"
+        android:layout_marginVertical="40dp"/>
+
+    <TextView
+        android:id="@+id/nomor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quiz"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#fccfa6"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_alternates_regular"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="20dp">
+        <TextView
+            android:id="@+id/quest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="#ff5fa2"
+            android:fontFamily="@font/montserrat_alternates_regular"
+            android:text="Apa yang dilakukan kucing ketika dia tidur?"/>
+    </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/pila"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="A"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#ff5fa2"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/pilb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="B"
+                android:backgroundTint="#ff5fa2"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/pilc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="C"
+                android:backgroundTint="#ff5fa2"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/pild"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="D"
+                android:backgroundTint="#ff5fa2"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+</LinearLayout>
