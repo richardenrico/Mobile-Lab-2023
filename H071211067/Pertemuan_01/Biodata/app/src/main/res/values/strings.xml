@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Biodata</string>
+    <string name="Link_Instagram">Instagram<a href='instagram.com/Lev_Computer'></a></string>
+    <string name="Link_WhatsApp">WhatsApp<a href='wa.me/6282259256328'></a></string>
+
+</resources>
