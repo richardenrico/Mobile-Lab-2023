@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     void finishQuiz() {
         String name = getIntent().getStringExtra("Fname");
-        Uri selectedImage1 = getIntent().getParcelableExtra("Image");
+        Uri selectedImage1 = getIntent().getParcelableExtra("image");
         Intent intent = new Intent(getApplicationContext(), Result.class);
 
         if (score >= totalQuestion * 0.60) {
@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             String passStatus = "Nice Try";
             intent.putExtra("status", passStatus);
         }
-        intent.putExtra("Image", selectedImage1);
+        intent.putExtra("image", selectedImage1);
         intent.putExtra("Name", name);
         intent.putExtra("Score", score * 20);
 
