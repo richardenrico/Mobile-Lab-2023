@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@color/white"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text ="Di Sini Nanti Nama"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/iv_profile"
+            android:textColor="@color/white"
+            tools:ignore="DuplicateIds" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="370dp"
+            android:layout_marginBottom="30dp"
+            android:layout_above="@+id/lineperchat"
+            android:text="13:59"
+            android:textStyle="bold"
+            android:textColor="@color/abu1"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/tv_chat"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Chat"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/abu1"
+            android:textSize="15sp"
+            android:layout_toEndOf="@id/iv_profile"
+            android:layout_below="@id/tv_name"/>
+        <ImageView
+            android:id="@+id/lineperchat"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/iv_profile"
+            android:layout_below="@id/tv_chat"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/quiz_bg"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/input_container">
+    </ImageView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ImgBtnUpload"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/pp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/gray"
+        android:layout_marginTop="210dp"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/ET_name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Enter Your Name"
+        android:padding="10dp"
+        android:background="@drawable/player_input"
+        android:layout_below="@id/ImgBtnUpload">
+    </EditText>
+
+    <Button
+        android:id="@+id/Bttn_Apply"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Apply"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/bttn_apply_color"
+        android:layout_below="@id/ET_name"
+        app:layout_constraintEnd_toEndOf="@+id/ET_name"
+        app:layout_constraintHorizontal_bias="0.571"/>
+</RelativeLayout>

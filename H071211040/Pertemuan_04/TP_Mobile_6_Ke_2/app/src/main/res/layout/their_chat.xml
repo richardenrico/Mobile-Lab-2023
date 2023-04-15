@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxWidth="250dp">
+    <RelativeLayout
+        android:id="@+id/their_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:background="@drawable/message2">
+        <TextView
+            android:id="@+id/tv_theirText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="I am like a demon, but more edgy, right"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/tv_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20:10"
+            android:layout_below="@id/tv_theirText"
+            android:textColor="@color/abu1"
+            android:textSize="10sp"
+            android:layout_marginStart="250dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

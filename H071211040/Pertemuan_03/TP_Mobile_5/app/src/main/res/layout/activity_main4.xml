@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quiz_bg"
+    tools:context=".MainActivity4">
+
+    <TextView
+        android:id="@+id/tv_gameOver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Over"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_above="@id/tv_name"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_above="@id/container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"/>
+    <ImageView
+        android:id="@+id/container"
+        android:layout_width="370dp"
+        android:layout_height="350dp"
+        android:background="@drawable/input_container"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+    <ImageView
+        android:id="@+id/container2"
+        android:layout_width="340dp"
+        android:layout_height="260dp"
+        android:background="@drawable/player_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="205dp"/>
+
+    <TextView
+        android:id="@+id/tv_yourScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score"
+        android:layout_marginTop="65dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/tv_name"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30sp"
+        android:textColor="@color/bttn_apply_color"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_yourScore"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tv_newBestScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_score"
+        android:text="New Best Score"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tv_bestScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30sp"
+        android:textColor="@color/bttn_apply_color"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_newBestScore"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_back_to_home"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/container2"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/bttn_apply_color"/>
+
+</RelativeLayout>
