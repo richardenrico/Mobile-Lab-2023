@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TugasPratikum1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/myblack</item>
+        <item name="colorPrimaryDark">@color/grey</item>
+        <item name="colorAccent">@color/myblack</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="button" parent="Theme.AppCompat.Light">
+        <item name="color">@color/grey</item>
+        <item name="android:background">@drawable/button</item>
+    </style>
+</resources>
+
