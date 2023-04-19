@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tugas 2</string>
+    <string name="Hitung">Hitung</string>
+
+    <string-array name="spinner_choices">
+        <item>Bola</item>
+        <item>Kerucut</item>
+        <item>Balok</item>
+    </string-array>
+
+</resources>
