@@ -27,6 +27,17 @@ public class AddPostFragment extends Fragment {
     private Uri imageUri;
     private ArrayList<Post> posts;
 
+    private static AddPostFragment instance;
+
+    private AddPostFragment() {};
+
+    public static AddPostFragment getInstance() {
+        if (instance == null) {
+            instance = new AddPostFragment();
+        }
+        return instance;
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -40,7 +51,6 @@ public class AddPostFragment extends Fragment {
 
         TextView tvTitle = getActivity().findViewById(R.id.tv_title);
         tvTitle.setText("Add Post");
-
 
         imagePickLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
                 result -> {
@@ -68,7 +78,7 @@ public class AddPostFragment extends Fragment {
                 }
 
                 FragmentManager fragmentManager = getParentFragmentManager();
-                HomeFragment fragment = new HomeFragment();
+                HomeFragment fragment = HomeFragment.getInstance();
 
                 Bundle bundle = new Bundle();
                 bundle.putParcelable(HomeFragment.EXTRA_POST, newPost);

@@ -12,10 +12,15 @@ import com.h071211059.pertemuan_05.databinding.ItemPostLayoutBinding;
 import java.util.LinkedList;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
+    private ClickListener clickListener;
     private final LinkedList<Post> posts;
 
     public PostAdapter(LinkedList<Post> posts) {
         this.posts = posts;
+    }
+
+    public void setClickListener(ClickListener clickListener) {
+        this.clickListener = clickListener;
     }
 
     @NonNull
@@ -47,6 +52,11 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         public void onBind(Post post) {
             binding.ivPostImage.setImageURI(post.getImageUri());
             binding.tvCaption.setText(post.getCaption());
+            binding.clProfile.setOnClickListener(v -> clickListener.onClick());
         }
+    }
+
+    interface ClickListener{
+       void onClick();
     }
 }

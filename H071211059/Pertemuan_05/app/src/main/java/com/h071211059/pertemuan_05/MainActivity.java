@@ -15,7 +15,6 @@ import java.util.LinkedList;
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding mainBinding;
     private FragmentManager fragmentManager;
-    public static LinkedList<Post> posts = new LinkedList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(mainBinding.getRoot());
 
         fragmentManager = getSupportFragmentManager();
-        HomeFragment homeFragment = new HomeFragment();
+        HomeFragment homeFragment = HomeFragment.getInstance();
         Fragment fragment =
                 fragmentManager.findFragmentByTag(HomeFragment.class.getSimpleName());
         if (!(fragment instanceof HomeFragment)) {
@@ -35,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
                     .commit();
         }
 
-        mainBinding.btnHome.setOnClickListener(v -> switchFragment(new HomeFragment()));
-        mainBinding.btnAddPost.setOnClickListener(v -> switchFragment(new AddPostFragment()));
-        mainBinding.btnProfile.setOnClickListener(v -> switchFragment(new ProfileFragment()));
+        mainBinding.btnHome.setOnClickListener(v -> switchFragment(HomeFragment.getInstance()));
+        mainBinding.btnAddPost.setOnClickListener(v -> switchFragment(AddPostFragment.getInstance()));
+        mainBinding.btnProfile.setOnClickListener(v -> switchFragment(ProfileFragment.getInstance()));
     }
 
     private void switchFragment(Fragment fragment) {
