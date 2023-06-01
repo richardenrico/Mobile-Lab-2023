@@ -113,7 +113,7 @@ public class SearchFragment extends Fragment {
             return users;
         }
 
-        String regex = String.join(".*", newText.split(""));
+        String regex = String.join(".*", newText.toLowerCase().split(""));
         regex = ".*" + regex + ".*";
         ArrayList<User> usersData = UserDataSource.users;
 
