@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080A13"
+    tools:context=".detailProfile"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="290dp"
+        android:layout_height="394dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="60dp">
+
+        <ImageView
+            android:id="@+id/roundedImageView"
+            android:layout_width="match_parent"
+            android:layout_height="440dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/miles_header" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:cardCornerRadius="160dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-200dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/white">
+
+        <ImageView
+            android:id="@+id/seeprofile"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/miles_profile" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="450dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape">
+
+        <TextView
+            android:id="@+id/Nama1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/hiragino_sans_gb_w3"
+            android:text="Miles"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Nama2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/hiragino_sans_gb_w3"
+            android:text="milesmorales"
+            android:textAlignment="center"
+            android:textColor="#B3ADAD"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="328dp"
+            android:layout_height="105dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/hiragino_sans_gb_w3"
+            android:text="My name is Miles Morales. I was bitten by a radioactive spider, and for, like, two days, I've been the one and only Spider-Man. I never thought I'd be able to do any of this stuff, but I can. Anyone can wear the mask. You can wear the mask. If you didn't know that before, I hope you do now."
+            android:textAlignment="center"
+            android:textColor="#B3ADAD"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
