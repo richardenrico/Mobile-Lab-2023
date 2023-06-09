@@ -1,4 +1,4 @@
-package com.h071211059.pertemuan_08;
+package com.h071211059.sql;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,10 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import com.h071211059.pertemuan_08.db.DatabaseContract;
-import com.h071211059.pertemuan_08.db.NoteHelper;
-import com.h071211059.pertemuan_08.model.Note;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -112,5 +108,4 @@ public class FormActivity extends AppCompatActivity {
             Toast.makeText(this, "Failed to delete data", Toast.LENGTH_SHORT).show();
         }
     }
-
 }

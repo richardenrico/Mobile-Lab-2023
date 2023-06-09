@@ -1,9 +1,3 @@
 <resources>
-    <string name="app_name">LocalSQLite App</string>
-    <string name="title">Title</string>
-    <string name="desc">Description</string>
-    <string name="save">Save</string>
-    <string name="update">Update</string>
-    <string name="delete">Delete</string>
-    <string name="empty_notes">There are no notes yet, please add first</string>
+    <string name="app_name">SQL</string>
 </resources>

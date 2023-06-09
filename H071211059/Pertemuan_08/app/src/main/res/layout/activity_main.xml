@@ -10,7 +10,7 @@
         android:id="@+id/tv_empty_notes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/empty_notes"
+        android:text="Notes empty"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

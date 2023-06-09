@@ -1,4 +1,4 @@
-package com.h071211059.pertemuan_08;
+package com.h071211059.sql;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
@@ -14,15 +14,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.h071211059.pertemuan_08.adapter.NoteAdapter;
-import com.h071211059.pertemuan_08.db.NoteHelper;
-import com.h071211059.pertemuan_08.model.Note;
-import com.h071211059.pertemuan_08.util.MappingHelper;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -30,7 +24,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class MainActivity extends AppCompatActivity {
-
     private ImageButton btnAdd;
     private RecyclerView rvNotes;
 
@@ -43,22 +36,22 @@ public class MainActivity extends AppCompatActivity {
                 if (result.getData() != null) {
                     System.out.println("RESULT CODE: " + result.getResultCode());
                     switch (result.getResultCode()) {
-                        case FormActivity.RESULT_ADD -> {
+                        case FormActivity.RESULT_ADD :
                             showNotes();
-                            Toast.makeText(this, "Note added successfully", Toast.LENGTH_SHORT).show();
-                        }
-                        case FormActivity.RESULT_UPDATE -> {
+                            Toast.makeText(this, "asdkfskdaj", Toast.LENGTH_SHORT).show();
+                            break;
+
+                        case FormActivity.RESULT_UPDATE :
                             showNotes();
                             Toast.makeText(this, "Note updated successfully", Toast.LENGTH_SHORT).show();
-                        }
-                        case FormActivity.RESULT_DELETE -> {
+                            break;
+                        case FormActivity.RESULT_DELETE :
                             showNotes();
                             Toast.makeText(this, "Note deleted successfully", Toast.LENGTH_SHORT).show();
-                        }
+                            break;
                     }
                 }
             });
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -106,6 +99,11 @@ public class MainActivity extends AppCompatActivity {
                 setRecyclerView(notes);
                 noData.setVisibility(View.GONE);
                 searchView.setVisibility(View.VISIBLE);
+                rvNotes.setVisibility(View.VISIBLE);
+            } else {
+                noData.setVisibility(View.VISIBLE);
+                searchView.setVisibility(View.GONE);
+                rvNotes.setVisibility(View.GONE);
             }
         }).execute();
     }

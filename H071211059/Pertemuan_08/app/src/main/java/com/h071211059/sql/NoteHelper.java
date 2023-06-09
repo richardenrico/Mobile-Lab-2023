@@ -1,4 +1,4 @@
-package com.h071211059.pertemuan_08.db;
+package com.h071211059.sql;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class NoteHelper {
+
     private static final String DATABASE_TABLE = DatabaseContract.TABLE_NAME;
 
     private static DatabaseHelper databaseHelper;
@@ -90,5 +91,4 @@ public class NoteHelper {
     public int delete(String id) {
         return database.delete(DATABASE_TABLE, DatabaseContract.NoteColumns._ID + " = ?", new String[]{id});
     }
-
 }

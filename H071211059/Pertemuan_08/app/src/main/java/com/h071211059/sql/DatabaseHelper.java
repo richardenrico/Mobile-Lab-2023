@@ -1,11 +1,12 @@
-package com.h071211059.pertemuan_08.db;
+package com.h071211059.sql;
 
 import android.content.Context;
-import android.database.sqlite.SQLiteDatabase; import android.database.sqlite.SQLiteOpenHelper;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    public static String DATABASE_NAME = "Note.db";
+    public static String DATABASE_NAME = "Notes.db";
     private static final int DATABASE_VERSION = 1;
 
     private static final String SQL_CREATE_TABLE_NOTE =
@@ -25,7 +26,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             );
 
     public DatabaseHelper(Context context) {
-       super(context, DATABASE_NAME, null, DATABASE_VERSION);
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
     @Override
@@ -37,4 +38,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + DatabaseContract.TABLE_NAME);
         onCreate(sqLiteDatabase);
-    }}
+    }
+}
+

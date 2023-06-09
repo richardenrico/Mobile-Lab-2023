@@ -1,9 +1,10 @@
-package com.h071211059.pertemuan_08.db;
+package com.h071211059.sql;
 
 import android.provider.BaseColumns;
 
 public class DatabaseContract {
-    public static String TABLE_NAME = "note";
+
+    public static String TABLE_NAME = "notes";
 
     public static final class NoteColumns implements BaseColumns {
 

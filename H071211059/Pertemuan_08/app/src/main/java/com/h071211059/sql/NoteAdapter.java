@@ -1,4 +1,4 @@
-package com.h071211059.pertemuan_08.adapter;
+package com.h071211059.sql;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,9 +7,6 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.h071211059.pertemuan_08.R;
-import com.h071211059.pertemuan_08.model.Note;
 
 import java.util.ArrayList;
 
@@ -67,4 +64,3 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.ViewHolder>{
         void onItemClicked(Note note);
     }
 }
-

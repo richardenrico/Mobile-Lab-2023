@@ -1,9 +1,6 @@
-package com.h071211059.pertemuan_08.util;
+package com.h071211059.sql;
 
 import android.database.Cursor;
-
-import com.h071211059.pertemuan_08.db.DatabaseContract;
-import com.h071211059.pertemuan_08.model.Note;
 
 import java.util.ArrayList;
 

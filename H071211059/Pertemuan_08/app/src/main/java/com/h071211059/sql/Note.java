@@ -1,4 +1,4 @@
-package com.h071211059.pertemuan_08.model;
+package com.h071211059.sql;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -10,9 +10,7 @@ public class Note implements Parcelable {
     private String title, description, date;
     private Boolean isEdited;
 
-    public Note() {
-    }
-
+    public Note() {}
     public Note(int id, String title, String description, String date, int isEdited) {
         this.id = id;
         this.title = title;
@@ -41,20 +39,6 @@ public class Note implements Parcelable {
             return new Note[size];
         }
     };
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(@NonNull Parcel parcel, int i) {
-        parcel.writeInt(id);
-        parcel.writeString(title);
-        parcel.writeString(description);
-        parcel.writeString(date);
-        parcel.writeByte((byte) (isEdited == null ? 0 : isEdited ? 1 : 2));
-    }
 
     public int getId() {
         return id;
@@ -94,5 +78,19 @@ public class Note implements Parcelable {
 
     public void setEdited(Boolean edited) {
         isEdited = edited;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(@NonNull Parcel parcel, int i) {
+        parcel.writeInt(id);
+        parcel.writeString(title);
+        parcel.writeString(description);
+        parcel.writeString(date);
+        parcel.writeByte((byte) (isEdited == null ? 0 : isEdited ? 1 : 2));
     }
 }
