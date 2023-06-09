@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecyclerView App</string>
+    <string name="menu_title">Chats</string>
+</resources>
