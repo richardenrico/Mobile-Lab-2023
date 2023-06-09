@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Background Thread Assignment</string>
+    <string name="name">Miles Morales</string>
+    <string name="username">Spider-Man</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#080A13"
+    tools:context=".UploadFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/top_header"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginBottom="10dp"
+            android:text="upload"
+            android:fontFamily="@font/hiragino_sans_gb_w3"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+        <ImageView
+            android:layout_width="333dp"
+            android:layout_height="362dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/top_header" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="286dp"
+            android:layout_height="252dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#FFFFFF"
+            app:cardCornerRadius="60dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_upload"
+                    android:layout_width="266dp"
+                    android:layout_height="158dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/baseline_image_24" />
+
+                <EditText
+                    android:id="@+id/et_caption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/hiragino_sans_gb_w3"
+                    android:hint="Write a caption..."
+                    android:textColor="@color/black"
+                    android:textColorHint="#717171"
+                    android:backgroundTint="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_upload"
+            android:layout_width="237dp"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="190dp"
+            android:layout_gravity="center"
+            android:background="@drawable/top_header"
+            android:fontFamily="@font/hiragino_sans_gb_w3"
+            android:text="upload"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            app:backgroundTint="@null" />
+
+</FrameLayout>
