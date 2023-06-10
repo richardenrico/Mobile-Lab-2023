@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="rlHomeTopBar" type="id" />
+    <item name="rlPostTopBar" type="id" />
+    <item name="rlProfileTopBar" type="id" />
+</resources>

@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostFragment"
+    android:orientation="vertical"
+    android:background="@color/abu">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="@dimen/_10sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18ssp"
+            android:layout_marginStart="@dimen/_8sdp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_searchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/topBar">
+        <RelativeLayout
+            android:id="@+id/rlUpImageContainer"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_250sdp"
+            android:layout_marginTop="@dimen/_27sdp"
+            android:background="@drawable/container_post1">
+
+            <ImageView
+                android:id="@+id/iv_post_image"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/baseline_image_24" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/container_post1"
+            android:padding="@dimen/_10sdp">
+
+            <EditText
+                android:id="@+id/et_post_caption"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint=" Write a Caption . . ."
+                android:background="@android:color/transparent"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:backgroundTint="@color/black"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/quiz_bg"
+    tools:context=".MainActivity3">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/input_container">
+    </ImageView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profileImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/pp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/gray"
+        android:layout_marginTop="210dp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/ET_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/profileImage"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white2"/>
+
+    <TextView
+        android:id="@+id/ET_BestScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/ET_name1"
+        android:textColor="@color/white2"/>
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Play!"
+        android:backgroundTint="@color/bttn_apply_color"
+        android:layout_below="@id/ET_BestScore"/>
+
+</RelativeLayout>
