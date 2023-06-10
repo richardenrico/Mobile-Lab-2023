@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/abu">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background_layout_profile_activity">
+
+
+        <RelativeLayout
+            android:id="@+id/rlContentShimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_layout_profile_activity">
+
+            <ImageView
+                android:id="@+id/civProfilePictureProfileActivityShimmer"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/shimmer_circle"/>
+
+            <TextView
+                android:id="@+id/tvFullNameProfileActivityShimmer"
+                android:layout_width="@dimen/_101sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@id/civProfilePictureProfileActivityShimmer"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/shimmer_color"/>
+
+            <TextView
+                android:id="@+id/tvEmailProfileActivityShimmer"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_below="@id/tvFullNameProfileActivityShimmer"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/shimmer_color"/>
+        </RelativeLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlContentProfile"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:background="@drawable/background_layout_profile_activity"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civProfilePictureProfileActivity"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <TextView
+            android:id="@+id/tvFullNameProfileActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/civProfilePictureProfileActivity"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Nama Lengkap"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvEmailProfileActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvFullNameProfileActivity"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:text="Email" />
+    </RelativeLayout>
+
+</RelativeLayout>

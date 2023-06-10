@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp"
+    android:layout_margin="@dimen/_6sdp"
+    android:background="@drawable/background_layout_main_activity"
+    android:id="@+id/parentLayout">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_10sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civProfilePictureMainActivity"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@color/black"/>
+        <TextView
+            android:id="@+id/tvFullNameMainActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FullName"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/civProfilePictureMainActivity"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvEmailMainActivity"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Email"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_toEndOf="@id/civProfilePictureMainActivity"
+            android:layout_below="@id/tvFullNameMainActivity"/>
+    </RelativeLayout>
+
+</RelativeLayout>

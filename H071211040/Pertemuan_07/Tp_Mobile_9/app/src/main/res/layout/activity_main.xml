@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlMainActivityTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="@dimen/_12sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Networking"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_19ssp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlShimmerTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="@dimen/_12sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Networking"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_19ssp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlShimmerTopBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmer_layout_main"/>
+            <include layout="@layout/shimmer_layout_main"/>
+            <include layout="@layout/shimmer_layout_main"/>
+            <include layout="@layout/shimmer_layout_main"/>
+            <include layout="@layout/shimmer_layout_main"/>
+            <include layout="@layout/shimmer_layout_main"/>
+            <include layout="@layout/shimmer_layout_main"/>
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlFailLoad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tvFailALayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Please check your internet connection"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/reload"
+            android:layout_below="@id/tvFailALayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/user_item"
+        android:layout_below="@id/rlMainActivityTopBar"
+        android:visibility="gone"/>
+
+</RelativeLayout>
