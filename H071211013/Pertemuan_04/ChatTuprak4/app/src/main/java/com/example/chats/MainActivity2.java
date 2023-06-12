@@ -35,9 +35,9 @@ public class MainActivity2 extends AppCompatActivity {
         rvBubble.setHasFixedSize(true);
         rvBubble.setLayoutManager(new LinearLayoutManager(this));
 
-        setUpAdapter();
-
         c1 = getIntent().getParcelableExtra("user");
+        setUpAdapter();
+        
         nav.setOnClickListener(view -> {
             Intent sent = new Intent(this,MainActivity3.class);
             sent.putExtra("user",c1);
